@@ -2,24 +2,23 @@
 
 ## Project Overview
 
-This project presents an interactive Customer Analytics Dashboard developed using Microsoft Power BI. It focuses on analyzing customer demographics, spending behavior, and key business performance indicators.
+An interactive Customer Analytics Dashboard developed using Microsoft Power BI to analyze customer demographics, spending behavior, and key business performance indicators.
 
-The dashboard transforms customer data into meaningful insights through interactive visualizations, KPI tracking, and customer segmentation.
+The project demonstrates practical skills in data analysis, business intelligence, data modeling, and dashboard development.
 
 ## Dashboard Preview
 
-<img width="1171" height="657" alt="Ekran görüntüsü 2026-11-05 160032" src="https://github.com/user-attachments/assets/d2bae7ff-a6b2-4bb1-be3c-aa393ee2998c" />
-
+![Customer Analytics Dashboard](dashboard-preview.png)
 
 ## Key Features
 
-- Customer overview and KPI tracking
-- Total customer and spending analysis
-- Average customer spending analysis
-- Customer age distribution
-- Spending analysis by city
-- Interactive city filtering
-- Customer segmentation by age groups
+- Total customer count
+- Total and average customer spending
+- Average customer age
+- Customer distribution by age group
+- Customer spending analysis by city
+- Interactive city filter
+- KPI tracking and data visualization
 
 ## Tools & Technologies
 
@@ -27,33 +26,23 @@ The dashboard transforms customer data into meaningful insights through interact
 - DAX (Data Analysis Expressions)
 - Data Modeling
 - Data Visualization
-- Microsoft Excel
+- Data Analysis
 
-## Key DAX Measures
+## DAX Measures
 
-**Total Customers**
 ```dax
 Total Customers = DISTINCTCOUNT(customers[Customer_ID])
-```
 
-**Total Spending**
-```dax
 Total Spending = SUM(customers[Annual_Spending])
-```
 
-**Average Spending**
-```dax
 Avg Spending = AVERAGE(customers[Annual_Spending])
-```
 
-**Average Age**
-```dax
 Avg Age = AVERAGE(customers[Age])
 ```
 
 ## Customer Segmentation
 
-Customers are categorized into age groups using a calculated column created with DAX.
+An age group calculated column is used to categorize customers.
 
 ```dax
 Age Group =
@@ -67,25 +56,20 @@ SWITCH(
 )
 ```
 
-## Dashboard Insights
+## Data Model
 
-The dashboard enables users to:
+The analysis uses customer data containing:
 
-- Explore customer distribution across different cities.
-- Compare spending behavior across customer groups.
-- Analyze customer demographics by age.
-- Monitor key performance indicators.
-- Interact with data through dashboard filters.
+- Customer_ID
+- Age
+- City
+- Annual_Spending
 
 ## Project Files
 
-| File | Description |
-|---|---|
-| `customer-analytics-dashboard.pbix` | Power BI dashboard file |
-| `dashboard-preview.png` | Dashboard preview image |
+- `customer-analytics-dashboard.pbix` – Power BI dashboard file
+- `dashboard-preview.png` – Dashboard preview image
 
 ## Project Objective
 
-The objective of this project is to demonstrate practical skills in business intelligence, data analysis, data modeling, DAX calculations, and interactive dashboard development.
-
-This project is part of my portfolio in Management Information Systems and Data Analytics.
+The objective of this project is to transform customer data into meaningful business insights through interactive visualizations, customer segmentation, and KPI tracking.
