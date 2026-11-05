@@ -4,7 +4,7 @@
 
 This project presents an interactive Customer Analytics Dashboard developed using Microsoft Power BI. It focuses on analyzing customer demographics, spending behavior, and key business performance indicators.
 
-The dashboard transforms customer data into meaningful insights through interactive visualizations and KPI tracking.
+The dashboard transforms customer data into meaningful insights through interactive visualizations, KPI tracking, and customer segmentation.
 
 ## Dashboard Preview
 
