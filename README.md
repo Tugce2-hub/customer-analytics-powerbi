@@ -28,11 +28,14 @@ An interactive Customer Analytics Dashboard developed using Microsoft Power BI t
 
 ## DAX Measures
 
-```dax
-Total Customers = DISTINCTCOUNT(customers[Customer_ID])
+**Total Customers**
+`DISTINCTCOUNT(customers[Customer_ID])`
 
-Total Spending = SUM(customers[Annual_Spending])
+**Total Spending**
+`SUM(customers[Annual_Spending])`
 
-Avg Spending = AVERAGE(customers[Annual_Spending])
+**Average Spending**
+`AVERAGE(customers[Annual_Spending])`
 
-Avg Age = AVERAGE(customers[Age])
+**Average Age**
+`AVERAGE(customers[Age])`
