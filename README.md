@@ -8,7 +8,8 @@ The dashboard transforms customer data into meaningful insights through interact
 
 ## Dashboard Preview
 
-![Customer Analytics Dashboard](dashboard-preview.png)
+<img width="1171" height="657" alt="Ekran görüntüsü 2026-11-05 160032" src="https://github.com/user-attachments/assets/d2bae7ff-a6b2-4bb1-be3c-aa393ee2998c" />
+
 
 ## Key Features
 
