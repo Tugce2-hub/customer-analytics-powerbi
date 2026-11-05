@@ -5,7 +5,8 @@ This project presents an interactive Customer Analytics Dashboard developed usin
 
 ## Dashboard Preview
 
-![Customer Analytics Dashboard](dashboard-preview.png)
+<img width="1171" height="657" alt="image" src="https://github.com/user-attachments/assets/e4f22d2c-d39a-4afa-9013-117ee2b60dda" />
+
 
 ## Key Features
 - Total customer count
