@@ -2,7 +2,7 @@
 
 Interactive Power BI dashboard analyzing customer demographics and spending behavior across cities.
 
-![Customer Analytics Dashboard](dashboard-preview.png)
+![Customer Analytics Dashboard](./dashboardpreview.png)
 
 ## Dataset
 Small sample dataset of 15 customers, created for practice:
