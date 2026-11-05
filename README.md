@@ -1,92 +1,41 @@
 # Customer Analytics Dashboard | Power BI
 
-## Project Overview
+Interactive Power BI dashboard analyzing customer demographics and spending behavior across cities.
 
-An interactive Customer Analytics Dashboard developed using Microsoft Power BI to analyze customer demographics, spending behavior, and key business performance indicators.
+![Customer Analytics Dashboard](dashboard-preview.png)
 
-The project demonstrates practical skills in data analysis, business intelligence, data modeling, and dashboard development.
+## Dataset
+Small sample dataset of 15 customers, created for practice:
 
-## Dashboard Preview
-[Customer Analytics Dashboard](./dashboard-preview.png)
+| Column | Description |
+|---|---|
+| Customer_ID | Unique customer ID |
+| Age | Customer age |
+| Gender | Female / Male |
+| City | Istanbul, Ankara, Izmir, Bursa |
+| Annual_Spending | Annual spending amount |
 
-<img width="1171" height="657" alt="Ekran görüntüsü 2026-11-05 160032" src="https://github.com/user-attachments/assets/c750cefb-d9d0-4e01-9809-a0a71aecd464" />
+## Dashboard Contents
+- **KPI cards:** Total Customers, Total Spending, Avg Spending, Avg Age
+- **Total Spending by City:** column chart
+- **Age vs Annual Spending:** scatter plot (one point per customer)
+- **Avg Spending by Gender:** bar chart
+- **Slicers:** City and Gender for interactive filtering
 
+## Key Findings
+- 15 customers, total annual spending of 258,000 (average 17,200), average age about 32.5.
+- Istanbul has the highest total spending (about 75,000); Izmir has the lowest (about 55,000).
+- Spending rises clearly with age: customers in their early 20s spend roughly 9,000-12,000, while customers in their 40s spend roughly 22,000-25,000.
+- Average spending is almost the same for male and female customers (about 17,000 each).
 
-## Key Features
-
-- Total customer count
-- Total and average customer spending
-- Average customer age
-- Customer distribution by age group
-- Customer spending analysis by city
-- Interactive city filter
-- KPI tracking and data visualization
-
-## Tools & Technologies
-
-- Microsoft Power BI
-- DAX (Data Analysis Expressions)
-- Data Modeling
-- Data Visualization
-- Data Analysis
-
-2. DAX Measures
-## DAX Measures
-
-**Total Customers**
-```dax
-Total Customers = DISTINCTCOUNT(customers[Customer_ID])
-
-
-Total Spending
-Total Spending = SUM(customers[Annual_Spending])
-
-
-Average Spending
-Avg Spending = AVERAGE(customers[Annual_Spending])
-
-
-Average Age
-Avg Age = AVERAGE(customers[Age])
-
-
-
-**Nereye yapıştıracaksın?**
-- `Dashboard Preview` kodunu mevcut Dashboard Preview bölümünün yerine.
-- `DAX Measures` kodunu mevcut DAX Measures bölümünün yerine.
-
-Son olarak **Commit changes** ile kaydet.
-
-## Customer Segmentation
-
-An age group calculated column is used to categorize customers.
-
-```dax
-Age Group =
-SWITCH(
-    TRUE(),
-    customers[Age] < 25, "18-24",
-    customers[Age] < 35, "25-34",
-    customers[Age] < 45, "35-44",
-    customers[Age] < 55, "45-54",
-    "55+"
-)
-```
-
-## Data Model
-
-The analysis uses customer data containing:
-
-- Customer_ID
-- Age
-- City
-- Annual_Spending
+## Tools
+- Microsoft Power BI Desktop
+- Data visualization and interactive filtering
 
 ## Project Files
+- `customer-analytics-dashboard.pbix`: Power BI dashboard file
+- `dashboard-preview.png`: dashboard preview image
+- `customers.csv`: sample data
 
-- `customer-analytics-dashboard.pbix` – Power BI dashboard file
-- `dashboard-preview.png` – Dashboard preview image
-
-## Project Objective
-
-The objective of this project is to transform customer data into meaningful business insights through interactive visualizations, customer segmentation, and KPI tracking.
+## Note
+This project uses a small sample dataset, so the findings illustrate the analysis approach rather than statistically reliable conclusions.
