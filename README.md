@@ -1,41 +1,66 @@
 # Customer Analytics Dashboard | Power BI
 
-Interactive Power BI dashboard analyzing customer demographics and spending behavior across cities.
+## Project Overview
+
+An interactive Customer Analytics Dashboard developed using Microsoft Power BI to analyze customer demographics, spending behavior, and key business performance indicators.
+
+## Dashboard Preview
 
 ![Customer Analytics Dashboard](./dashboardpreview.png)
 
-## Dataset
-Small sample dataset of 15 customers, created for practice:
+## Key Features
 
-| Column | Description |
-|---|---|
-| Customer_ID | Unique customer ID |
-| Age | Customer age |
-| Gender | Female / Male |
-| City | Istanbul, Ankara, Izmir, Bursa |
-| Annual_Spending | Annual spending amount |
+- Total customer count
+- Total and average customer spending
+- Average customer age
+- Customer distribution by age group
+- Customer spending analysis by city
+- Interactive city filter
+- KPI tracking and data visualization
 
-## Dashboard Contents
-- **KPI cards:** Total Customers, Total Spending, Avg Spending, Avg Age
-- **Total Spending by City:** column chart
-- **Age vs Annual Spending:** scatter plot (one point per customer)
-- **Avg Spending by Gender:** bar chart
-- **Slicers:** City and Gender for interactive filtering
+## Tools & Technologies
 
-## Key Findings
-- 15 customers, total annual spending of 258,000 (average 17,200), average age about 32.5.
-- Istanbul has the highest total spending (about 75,000); Izmir has the lowest (about 55,000).
-- Spending rises clearly with age: customers in their early 20s spend roughly 9,000-12,000, while customers in their 40s spend roughly 22,000-25,000.
-- Average spending is almost the same for male and female customers (about 17,000 each).
+- Microsoft Power BI
+- DAX (Data Analysis Expressions)
+- Data Modeling
+- Data Visualization
+- Data Analysis
 
-## Tools
-- Microsoft Power BI Desktop
-- Data visualization and interactive filtering
+## DAX Measures
+
+```dax
+Total Customers = DISTINCTCOUNT(customers[Customer_ID])
+
+Total Spending = SUM(customers[Annual_Spending])
+
+Avg Spending = AVERAGE(customers[Annual_Spending])
+
+Avg Age = AVERAGE(customers[Age])
+```
+
+## Customer Segmentation
+
+```dax
+Age Group =
+SWITCH(
+    TRUE(),
+    customers[Age] < 25, "18-24",
+    customers[Age] < 35, "25-34",
+    customers[Age] < 45, "35-44",
+    customers[Age] < 55, "45-54",
+    "55+"
+)
+```
+
+## Data Model
+
+The dataset includes customer ID, age, city, and annual spending information.
 
 ## Project Files
-- `customer-analytics-dashboard.pbix`: Power BI dashboard file
-- `dashboard-preview.png`: dashboard preview image
-- `customers.csv`: sample data
 
-## Note
-This project uses a small sample dataset, so the findings illustrate the analysis approach rather than statistically reliable conclusions.
+- `customer-analytics-dashboard.pbix` – Power BI dashboard file
+- `dashboard-preview.png` – Dashboard preview image
+
+## Project Objective
+
+To demonstrate practical skills in business intelligence, data analysis, data modeling, DAX calculations, and interactive dashboard development.
