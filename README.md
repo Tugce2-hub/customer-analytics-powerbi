@@ -7,6 +7,7 @@ An interactive Customer Analytics Dashboard developed using Microsoft Power BI t
 ## Dashboard Preview
 
 ![Customer Analytics Dashboard](./dashboardpreview.png)
+![Customer Analytics Dashboard](./dashboardpreview.png)
 
 ## Key Features
 
