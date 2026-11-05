@@ -36,7 +36,6 @@ Total Spending = SUM(customers[Annual_Spending])
 Avg Spending = AVERAGE(customers[Annual_Spending])
 
 Avg Age = AVERAGE(customers[Age])
-```
 
 ## Customer Segmentation
 
