@@ -8,7 +8,8 @@ The project demonstrates practical skills in data analysis, business intelligenc
 
 ## Dashboard Preview
 
-![Customer Analytics Dashboard](dashboard-preview.png)
+<img width="1171" height="657" alt="Ekran görüntüsü 2026-11-05 160032" src="https://github.com/user-attachments/assets/c750cefb-d9d0-4e01-9809-a0a71aecd464" />
+
 
 ## Key Features
 
