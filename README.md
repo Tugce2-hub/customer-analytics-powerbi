@@ -5,8 +5,6 @@ This project presents an interactive Customer Analytics Dashboard developed usin
 
 ## Dashboard Preview
 
-## Dashboard Preview
-
 ![Customer Analytics Dashboard](dashboard-preview.png)
 
 ## Key Features
