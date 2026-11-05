@@ -28,8 +28,6 @@ An interactive Customer Analytics Dashboard developed using Microsoft Power BI t
 
 ## DAX Measures
 
-## DAX Measures
-
 ```dax
 Total Customers = DISTINCTCOUNT(customers[Customer_ID])
 
